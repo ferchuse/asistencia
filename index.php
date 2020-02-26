@@ -1,3 +1,3 @@
 <?php
-HEADER("location: entrada/");
+HEADER("location: entrada/index.php");
 ?>
