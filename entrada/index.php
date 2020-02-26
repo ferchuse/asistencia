@@ -31,7 +31,7 @@
 							</div>
 							
 							<h3 class="text-center">Registrar Entrada</h3>
-							<div class="text-center"><a href="../alumnos">Acceso Administración</a></div>
+							<div class="text-center"><a href="../alumnos/index.php">Acceso Administración</a></div>
 							
 							
 							<input type="text" name="matricula" class="form-control input-lg" id="matricula"
