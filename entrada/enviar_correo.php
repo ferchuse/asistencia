@@ -33,7 +33,7 @@
 		<hr>
 		<small><a href='www.glifo.mx'>glifo.mx</a></small>
 		";
-		$mail->AltBody = "Adjunto Factura  ";
+		// $mail->AltBody = "Adjunto Factura  ";
 		
 		if(!$mail->send()) {
 			$resultado["estatus_correo"] = "error";
