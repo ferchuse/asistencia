@@ -23,7 +23,7 @@
 		
 		// $mail->addAddress($correo); 
 		$mail->addBCC("ferchuse@hotmail.com");  
-		$mail->addBCC("ferchuse16@gmail.com");  
+		// $mail->addBCC("ferchuse16@gmail.com");  
 		
 		
 		$mail->isHTML(true);                                  
@@ -40,6 +40,7 @@
 			$resultado["mensaje_correo"] = 'No se envio el correo.'. $mail->ErrorInfo;
 			
 			} else {
+			$resultado["mail"] = $mail;
 			$resultado["estatus_correo"] = "success";
 			$resultado["mensaje_correo"] = "Correo Enviado Correctamente";
 			
