@@ -1,21 +1,7 @@
-<?php 
-	$permisos = [
-	"administrador" => [
-	0 => [
-	"titulo"=> "Entradas",
-	"url"=> "../inventarios/salidas.php?tipo_movimiento=ENTRADA"
-	
-	]
-	]
-	];
-	
-?>
-
-
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark mb-2 na ">
 	
 	<a class="navbar-brand" href="#">
-		<img src="../img/logo_small.jpg" class="" width="40px">
+		<!-- <img src="../img/.jpg" class="" width="40px">-->
 	</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 		<span class="navbar-toggler-icon"></span>

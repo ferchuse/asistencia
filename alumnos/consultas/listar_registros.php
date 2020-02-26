@@ -4,7 +4,7 @@
 	
 	$consulta = '
 	SELECT 
-	id_alumnos,
+	
 	matricula,
 	CONCAT(ape_pat, " ", ape_mat, " ", nombre_alumno) AS nombre_completo
 	FROM 
@@ -46,10 +46,10 @@
 				<td><?php echo $fila["nombre_completo"]; ?></td>
 				
 				<td>
-					<button class="btn btn-warning btn_editar" data-id_registro="<?php echo $fila["id_alumnos"] ?>">
+					<button class="btn btn-warning btn_editar" data-id_registro="<?php echo $fila["matricula"] ?>">
 						<i class="fa fa-edit"></i> Editar
 					</button>
-					<button class="btn btn-danger btn_borrar" data-id_registro="<?php echo $fila["id_alumnos"] ?>">
+					<button class="btn btn-danger btn_borrar" data-id_registro="<?php echo $fila["matricula"] ?>">
 						<i class="fa fa-trash"></i> Borrar
 					</button>
 				</td>

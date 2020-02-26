@@ -14,8 +14,8 @@
 								<input  type="text" class="form-control" name="matricula" id="matricula" required>
 							</div>
 							<div class="form-group">
-								<label for="alias_clientes">Nombre :</label>
-								<input  type="text" class="form-control" name="alias_clientes" id="alias_clientes" required>
+								<label for="nombre_alumno">Nombre :</label>
+								<input  type="text" class="form-control" name="nombre_alumno" id="nombre_alumno" required>
 							</div>
 							<div class="form-group">
 								<label for="ape_pat">Apellido Paterno:</label>
@@ -30,8 +30,8 @@
 								<input  class="form-control" type="password" name="contrasena" id="contrasena" required>
 							</div>
 							<div class="form-group">
-								<label for="id_vendedores">Correo Padre:</label>
-									<input  class="form-control" type="email" name="correo" id="ape_mat" required>
+								<label for="correo">Correo Padre:</label>
+									<input  class="form-control" type="email" name="correo" id="correo" required>
 							</div>
 						</div>
 					</div>

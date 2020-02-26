@@ -50,6 +50,7 @@
 							</div>
 							
 							<h4 class="text-center">Iniciar Sesión</h4>
+								<div class="text-center"><a href="../entrada">Registrar Accesos</a></div>
 							<div class="form-group">
 								<?= generar_select($link, "usuarios", "id_usuarios", "nombre_usuarios", false, false, true);?>
 							</div>

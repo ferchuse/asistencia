@@ -95,12 +95,12 @@ function editarRegistro() {
 	icono.toggleClass("fa-edit fa-spinner fa-spin");
 	
 	$.ajax({
-		url: "../../funciones/fila_select.php",
+		url: "../funciones/fila_select.php",
 		
 		dataType: "JSON",
 		data: {
 			tabla: "alumnos",
-			id_campo: "id_clientes",
+			id_campo: "matricula",
 			id_valor: id_registro
 			
 		}
@@ -142,13 +142,14 @@ function confirmaBorrar(event){
 			"method": "POST",
 			"data": {
 				"tabla": "alumnos",
-				"id_campo": "id_alumnos",
+				"id_campo": "matricula",
 				"id_valor": $boton.data("id_registro")
 			}
 			}).done( function alTerminar (respuesta){
 			console.log("respuesta", respuesta);
 			
 			$fila.remove();
+			contarRegistros("tabla_registros");
 			}).fail(function(xhr, textEstatus, error){
 			console.log("textEstatus", textEstatus);
 			console.log("error", error);

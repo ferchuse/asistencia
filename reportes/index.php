@@ -22,7 +22,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 		
-    <title>Reporte de Comisiones</title>
+    <title>Reporte de Asistencias</title>
 		
     <?php include("../styles.php"); ?>
 		<style>
@@ -39,7 +39,7 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-12">
-					<h3 class="text-center">Reporte de Comisiones</h3>
+					<h3 class="text-center">Reporte de Asistencias</h3>
 					<hr>
 				</div>
 			</div>
@@ -47,13 +47,10 @@
 				<div class="col-md-12">
 					<form id="form_reportes" class="form-inline">
 						<div class="form-group mr-2">
-							<label for="fecha_inicio">Desde:</label>
-							<input type="date" name="fecha_inicio" id="fecha_inicio" class="form-control" value="<?php echo $fa_inicial;?>">
+							<label for="fecha_inicio">Fecha Reporte:</label>
+							<input type="date" name="fecha_inicio" id="fecha_inicio" class="form-control" value="<?php echo date("Y-m-d");?>">
 						</div>
-						<div class="form-group mr-2">
-							<label for="fecha_fin">Hasta:</label>
-							<input type="date" name="fecha_fin" id="fecha_fin" class="form-control" value="<?php echo $fa_final;?>">
-						</div>
+						
 						<button type="submit" class="btn btn-success" id="btn_buscar">
 							<i class="fa fa-search"></i> Buscar
 						</button>
@@ -69,11 +66,9 @@
 			</div>
 			
 		</div >
-		<div id="historial">
-		</div>
-		
+				
 		<?php  include('../scripts.php'); ?>
-		<script src="comisiones.js"></script>
+		<script src="reportes.js?v=<?= date("d-m-Y-h-i-s")?>"></script>
 	</body>
 	
 	
