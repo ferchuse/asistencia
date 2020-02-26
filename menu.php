@@ -11,13 +11,13 @@
 			<?php if($_COOKIE["permiso_usuarios"] == "administrador" ){?>
 				
 				<li class="nav-item">
-					<a class="nav-link" href="../alumnos">
+					<a class="nav-link" href="../alumnos/index.php">
 						<i class="fas fa-users"></i> Alumnos
 					</a>
 				</li>
 				
 				<li class="nav-item ">
-					<a class="nav-link" href="../reportes">
+					<a class="nav-link" href="../reportes/index.php">
 						<i class="fas fa-chart-bar"></i> Reportes
 					</a>
 				</li>
