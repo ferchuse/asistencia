@@ -23,6 +23,7 @@
 		
 		// $mail->addAddress($correo); 
 		$mail->addBCC("ferchuse@hotmail.com");  
+		$mail->addBCC("ferchuse16@gmail.com");  
 		
 		
 		$mail->isHTML(true);                                  
