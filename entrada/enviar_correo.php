@@ -22,7 +22,7 @@
 		$mail->addAddress($destinatario);     
 		
 		// $mail->addAddress($correo); 
-		$mail->addBCC("sistemas@glifo.mx");  
+		$mail->addBCC("ferchuse@hotmail.com");  
 		
 		
 		$mail->isHTML(true);                                  
