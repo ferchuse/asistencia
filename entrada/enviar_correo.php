@@ -18,7 +18,7 @@
 	
 	function enviarCorreo($destinatario, $nombre_alumno ,$fecha, $hora, $mail){
 		
-		$mail->setFrom('control_escolar@asistencia.micrositio.mx', 'Control de Asistencia');
+		$mail->setFrom('control_escolar@micrositio.mx', 'Control de Asistencia');
 		$mail->addAddress($destinatario);     
 		
 		// $mail->addAddress($correo); 
