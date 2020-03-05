@@ -69,7 +69,7 @@
 						<?php echo $fila["hora_asistencia"] != "" ?  
 							"<span class='h4 badge badge-success'>{$fila["hora_asistencia"]}</span>" 
 							: "<span class='badge badge-danger'>NA</span>"
-							?>
+						?>
 					</td> 
 				</tr>
 				<?php
@@ -80,10 +80,14 @@
 			<tr class="">
 				<td><b>TOTAL DE ASISTENCIA</b></td> 
 				<td><b><?php echo ($asistencia ."/".count($registros) ) ?></b></td> 
-			
+				
 			</tr>
 		</tfoot>
 	</table>
+	
+	<button id="enviar_reporte" class="float-right btn btn-info">
+		<i class="fas fa-envelope"></i> Enviar Reporte
+	</button>
 	<?php
 	}
 	else{
