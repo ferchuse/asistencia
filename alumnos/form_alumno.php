@@ -25,9 +25,9 @@
 								<label for="ape_mat">Apellido Materno:</label>
 								<input  class="form-control" type="text" name="ape_mat" id="ape_mat" required>
 							</div>
-							<div class="form-group">
+							<div hidden class="form-group">
 								<label for="contrasena">Contraseña:</label>
-								<input  class="form-control" type="password" name="contrasena" id="contrasena" required>
+								<input  class="form-control" type="password" name="contrasena" id="contrasena" >
 							</div>
 							<div class="form-group">
 								<label for="correo">Correo Padre:</label>
