@@ -4,8 +4,6 @@
 	require '../../lib/phpmailer/PHPMailerAutoload.php';
 	$link = Conectarse();
 	
-	$mail = new PHPMailer;
-	$mail->CharSet = 'UTF-8';
 	
 	
 	$consulta = "SELECT
@@ -42,6 +40,9 @@
 	
 	
 	foreach($registros AS $i=>$fila){
+		$mail = new PHPMailer;
+		$mail->CharSet = 'UTF-8';
+		
 		$mail->setFrom('control_escolar@micrositio.mx', 'Control de Asistencia');
 		$mail->addAddress($fila["correo"]);     
 		
@@ -52,19 +53,32 @@
 		$mail->isHTML(true);                                  
 		
 		$mail->Subject = 'Registro de Asistencia';
-		$mail->Body    = "<center><b>{$fila["nombre_completo"]} , Fecha: {$fila["fecha_asistencia"]}, Hora: {$fila["hora_asistencia"]}</b> </center>
+		$body = "<center><b>{$fila["nombre_completo"]}</center><br>";
+		
+		
+		if($fila["hora_asistencia"] != ""){
+			$body.= "<center><b>Fecha: </b>{$fila["fecha_asistencia"]}</center><br>";
+			$body.= "<center><b>Hora: </b>{$fila["hora_asistencia"]}</center><br>";
+			
+			}else{
+			$body.= "<center ><b>NO ASISTIÓ</b> </center>";
+			
+		}
+		
+		
 		<hr>
 		";
+		$mail->Body  = $body;
 		
 		if(!$mail->send()) {
-			$respuesta["estatus_correo"][] = "error";
-			$respuesta["mensaje_correo"][] = 'No se envio el correo.'. $mail->ErrorInfo;
-			
-			} else {
-			$respuesta["mail"] = $mail;
-			$respuesta["estatus_correo"][] = "success";
-			$respuesta["mensaje_correo"][] = "Correo Enviado Correctamente";
-			
+		$respuesta["estatus_correo"][] = "error";
+		$respuesta["mensaje_correo"][] = 'No se envio el correo.'. $mail->ErrorInfo;
+		
+		} else {
+		$respuesta["mail"] = $mail;
+		$respuesta["estatus_correo"][] = "success";
+		$respuesta["mensaje_correo"][] = "Correo Enviado Correctamente";
+		
 		}
 		
 	}
