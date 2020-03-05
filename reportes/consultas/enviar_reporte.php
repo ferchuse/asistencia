@@ -66,8 +66,6 @@
 		}
 		
 		
-		<hr>
-		";
 		$mail->Body  = $body;
 		
 		if(!$mail->send()) {
