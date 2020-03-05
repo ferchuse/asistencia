@@ -51,7 +51,7 @@
 							<input type="date" name="fecha_inicio" id="fecha_inicio" class="form-control" value="<?php echo date("Y-m-d");?>">
 						</div>
 						
-						<button type="submit" class="btn btn-success" id="btn_buscar">
+						<button type="submit" class="btn btn-success d-print-none" id="btn_buscar">
 							<i class="fa fa-search"></i> Buscar
 						</button>
 						

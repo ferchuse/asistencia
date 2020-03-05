@@ -58,10 +58,7 @@
 					if( $fila["hora_asistencia"] != ""){
 						
 						$asistencia++;
-					}    
-					
-					// $inasistencia+=  $fila["abonado_vendedor"];
-					
+					}  
 				?>
 				<tr >
 					<td><?= $fila["nombre_completo"] ?></td> 
@@ -85,8 +82,12 @@
 		</tfoot>
 	</table>
 	
-	<button id="enviar_reporte" class="float-right btn btn-info">
+	<button id="enviar_reporte" class="float-right btn btn-info d-print-none">
 		<i class="fas fa-envelope"></i> Enviar Reporte
+	</button>
+	
+<button  onclick="window.print()" class="float-right btn btn-secondary d-print-none">
+		<i class="fas fa-print"></i> Imprimir
 	</button>
 	<?php
 	}
