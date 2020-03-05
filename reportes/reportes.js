@@ -41,7 +41,7 @@ function enviarReporte(event){
 		"method": "POST",
 		"data": $("#form_reportes").serialize()
 		}).done( function alTerminar (respuesta){					
-		
+		alertify.success(respuesta.estatus_correo.length + "Correos Enviados")
 		console.log(respuesta)
 		
 		}).always(function(){
