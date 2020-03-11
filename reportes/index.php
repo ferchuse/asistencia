@@ -60,7 +60,7 @@
 			</div>
 			<hr>
 			<div class="row text-center" >
-				<div class="col-10 " id="listar_registros">
+				<div class="col-8 " id="listar_registros">
 					
 				</div>
 			</div>
