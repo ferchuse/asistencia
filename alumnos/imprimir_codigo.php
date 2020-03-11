@@ -31,6 +31,8 @@
 							
 						</h4>
 						Matrícula: <span id="matricula"><?= $_GET["matricula"]?></span>
+						<br>
+						<br>
 						<center id="codigo" class="mx-auto" >
 							
 						</center>
@@ -51,7 +53,10 @@
 		<script >
 			$(document).ready(function(){
 				
-				$("#codigo").barcode($("#matricula").text(), "code128");  
+				$("#codigo").barcode($("#matricula").text(), "code128", {
+					 barWidth: 5,
+          barHeight: 100
+					});  
 				
 			})
 		</script>
