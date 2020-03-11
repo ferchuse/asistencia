@@ -46,7 +46,7 @@
 						<form name="form_login" id="form_login" action="" role="login" method="post">
 							
 							<div id="login_logo">
-								<i class="fa fa-lock fa-4x"></i>
+																<img src="../img/logo_fenix.jpg" class="img-responsive">
 							</div>
 							
 							<h4 class="text-center">Iniciar Sesión</h4>
