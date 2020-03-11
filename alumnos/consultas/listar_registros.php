@@ -46,6 +46,9 @@
 				<td><?php echo $fila["nombre_completo"]; ?></td>
 				
 				<td>
+					<a target="_blank" class="btn btn-info btn_editar" href="imprimir_codigo.php?matricula=<?= $fila["matricula"]?>&nombre_completo=<?= $fila["nombre_completo"]?>">
+						<i class="fa fa-barcode"></i> Imprimir Código
+					</a>
 					<button class="btn btn-warning btn_editar" data-id_registro="<?php echo $fila["matricula"] ?>">
 						<i class="fa fa-edit"></i> Editar
 					</button>

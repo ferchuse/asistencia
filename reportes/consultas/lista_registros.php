@@ -65,7 +65,7 @@
 					<td >
 						<?php echo $fila["hora_asistencia"] != "" ?  
 							"<span class='h4 badge badge-success'>{$fila["hora_asistencia"]}</span>" 
-							: "<span class='badge badge-danger'>NA</span>"
+							: "<button class='badge badge-danger'>NA</button>"
 						?>
 					</td> 
 				</tr>
@@ -86,7 +86,7 @@
 		<i class="fas fa-envelope"></i> Enviar Reporte
 	</button>
 	
-<button  onclick="window.print()" class="float-right btn btn-secondary d-print-none">
+	<button  onclick="window.print()" class="float-right btn btn-secondary d-print-none">
 		<i class="fas fa-print"></i> Imprimir
 	</button>
 	<?php
