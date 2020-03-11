@@ -4,7 +4,4 @@
 
 <link href="../css/alertify.min.css" rel="stylesheet" media="all"/>
 
-<link href="../css/common.css" rel="stylesheet" >
-<link href="../lib/autocomplete.css" rel="stylesheet" >
-
 <link href="../manifest.json" rel="manifest">

@@ -26,8 +26,8 @@
 					<section class="login-form">
 						<form name="form_login" id="form_login" autocomplete="off" action="" role="login" method="post">
 							
-							<div id="login_logo">
-								<i class="fa fa-sign-in fa-4x"></i>
+							<div id="login_logo" class="img-responsive">
+							<img src="../img/logo.png">
 							</div>
 							
 							<h3 class="text-center">Registrar Entrada</h3>
