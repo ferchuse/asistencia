@@ -54,7 +54,7 @@
 			$(document).ready(function(){
 				
 				$("#codigo").barcode($("#matricula").text(), "code128", {
-					 barWidth: 5,
+					 barWidth: 3,
           barHeight: 100
 					});  
 				
