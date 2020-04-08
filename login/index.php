@@ -46,11 +46,11 @@
 						<form name="form_login" id="form_login" action="" role="login" method="post">
 							
 							<div id="login_logo">
-																<img src="../img/logo_fenix.jpg" class="img-responsive">
+								<img src="../img/logo_fenix.jpg" class="img-responsive">
 							</div>
 							
 							<h4 class="text-center">Iniciar Sesión</h4>
-								<div class="text-center"><a href="../entrada/index.php">Registrar Accesos</a></div>
+							<div class="text-center"><a href="../entrada/index.php">Registrar Accesos</a></div>
 							<div class="form-group">
 								<?= generar_select($link, "usuarios", "id_usuarios", "nombre_usuarios", false, false, true);?>
 							</div>
@@ -61,13 +61,15 @@
 							<button type="submit" id="btn_login" class="btn btn-lg btn-primary btn-block">
 								<i class="fa fa-sign-in"></i> Iniciar Sesión 
 							</button>
+							
+							
 						</form>
-						
+					
 					</section>
 					
 				</div>
 			</div>
 		</div>
 	</body>
-
+	
 </html>
