@@ -18,7 +18,9 @@
 	</head>
 	
 	<body>
-    <div class="container">
+	
+	
+    <div class="container" >
 			<div class="row" id="pwd-container">
 				<div class="col-md-4"></div>
 				
@@ -29,11 +31,12 @@
 							<div id="login_logo" >
 								<img src="../img/logo.png" class="img-responsive">
 							</div>
+							<h1 class="text-center">Sitio Suspendido</h1>
+	
+							<h3 class="text-center hidden">Registrar Entrada</h3>
 							
-							<h3 class="text-center">Registrar Entrada</h3>
 							
-							
-							<input type="text" name="matricula" class="form-control input-lg" id="matricula"
+							<input  type="hidden" name="matricula" class="form-control input-lg" id="matricula"
 							placeholder="Matrícula" required="" autofocus="true"/>
 							
 						</form>
