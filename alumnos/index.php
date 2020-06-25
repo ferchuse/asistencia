@@ -24,6 +24,9 @@
 		<?php include("../menu.php"); ?>
 		
 		<div class="container d-print-none">
+			<h1 class="text-center">Sitio Suspendido</h1>
+		</div>
+		<div class="container d-print-none" hidden >
 			<div class="row">
 				<div class="col-12 border-bottom mb-3">
 					<h3 class="text-center">Alumnos <span class="badge badge-success" id="contar_registros">0</span></h3>

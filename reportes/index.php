@@ -24,7 +24,7 @@
 		
     <title>Reporte de Asistencias</title>
 		
-    <?php include("../styles.php"); ?>
+		<?php include("../styles.php"); ?>
 		<style>
 			.clickable{
 			cursor:pointer;
@@ -34,9 +34,10 @@
 	
 	<body>
 		<?php include("../menu.php");?>
-		<div class="container-fluid">
+		<div class="container d-print-none">
+			<h1 class="text-center">Sitio Suspendido</h1>
 		</div>
-		<div class="container-fluid">
+		<div class="container-fluid" hidden>
 			<div class="row">
 				<div class="col-md-12">
 					<h3 class="text-center">Reporte de Asistencias</h3>
